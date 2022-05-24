@@ -165,7 +165,7 @@ public class MapActivity340 extends BaseActivity {
         final PlacemarkMapObject circle = mapObjects.addPlacemark(gp);
         circle.setOpacity(0.5f);
         circle.setIcon(ImageProvider.fromResource(this,icon));
-        circle.setDraggable(moveTo);         // ПЕРЕМЕЩЕНИЕ !!!!!!!!!!!!
+        circle.setDraggable(false);
         circle.addTapListener(new MapObjectTapListener() {
             @Override
             public boolean onMapObjectTap(MapObject mapObject, Point point) {
